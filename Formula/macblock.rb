@@ -18,8 +18,13 @@ class Macblock < Formula
     <<~EOS
       Next:
         sudo macblock install
+        sudo macblock update
+        sudo macblock enable
 
-      This will install PF redirection and launchd jobs.
+      Notes:
+        - Do not run `sudo brew`.
+        - `sudo macblock uninstall` removes system integration (PF + launchd).
+        - If Homebrew fails to remove a `.reinstall` directory, follow the printed path and fix permissions.
     EOS
   end
 
