@@ -24,13 +24,13 @@ class Macblock < Formula
   def caveats
     <<~CAVEATS
       To complete installation:
-        sudo #{bin}/macblock install
-        sudo #{bin}/macblock enable
+        sudo macblock install
+        sudo macblock enable
 
       Optional:
-        sudo #{bin}/macblock update
-        #{bin}/macblock status
-        #{bin}/macblock doctor
+        sudo macblock update
+        macblock status
+        macblock doctor
 
       Documentation:
         #{homepage}
