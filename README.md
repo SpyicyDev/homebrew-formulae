@@ -1,49 +1,33 @@
-# homebrew-macblock
+# homebrew-formulae
 
-Homebrew tap for [macblock](https://github.com/SpyicyDev/macblock), a local DNS sinkhole for macOS.
+Personal Homebrew tap for formulae I maintain.
+
+## Tap
+
+```bash
+brew tap SpyicyDev/formulae
+```
 
 ## Install
 
-One-liner:
+Install a formula directly:
 
 ```bash
-brew install SpyicyDev/macblock/macblock
+brew install SpyicyDev/formulae/<formula>
 ```
 
-Or, using an explicit tap:
+Or tap first, then install by name:
 
 ```bash
-brew tap SpyicyDev/macblock
-brew install macblock
+brew tap SpyicyDev/formulae
+brew install <formula>
 ```
 
-## Post-install setup
+## Formulae
 
-`macblock` needs to install LaunchDaemons and update system DNS.
+### macblock
 
-```bash
-sudo macblock install
-sudo macblock enable
-```
+Local DNS sinkhole for macOS using `dnsmasq`.
 
-Optional (recommended):
-
-```bash
-sudo macblock update
-macblock doctor
-```
-
-## Uninstall
-
-Remove system integration first, then remove the Homebrew packages:
-
-```bash
-sudo macblock uninstall
-brew uninstall macblock dnsmasq
-```
-
-## Documentation
-
-See the main repository for full documentation and troubleshooting:
-
-- https://github.com/SpyicyDev/macblock
+- Repo: https://github.com/SpyicyDev/macblock
+- Install: `brew install SpyicyDev/formulae/macblock`
