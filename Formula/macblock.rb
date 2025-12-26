@@ -15,11 +15,10 @@ class Macblock < Formula
 
   depends_on :macos
   depends_on 'dnsmasq'
-  depends_on 'python@3.13'
-  depends_on 'python-setuptools'
+  depends_on 'python@3.12'
 
   def install
-    virtualenv_install_with_resources(using: 'python@3.13')
+    virtualenv_install_with_resources(using: 'python@3.12')
   end
 
   def caveats
