@@ -7,10 +7,9 @@ class Macblock < Formula
   desc "Local DNS sinkhole for macOS using dnsmasq"
   homepage "https://github.com/SpyicyDev/macblock"
 
-  url "https://github.com/SpyicyDev/macblock/archive/refs/tags/v0.2.5.tar.gz"
-  sha256 "9c186a112f48bc1cee7988276b529d3a079e35d32ae7f340ae78cdfcd973e539"
+  url "https://github.com/SpyicyDev/macblock/archive/refs/tags/v0.2.6.tar.gz"
+  sha256 "27e1378ab092806ec35ea24f281b0f6afe5ac278e7d489b0cba29d29eb698df9"
   license "MIT"
-  revision 1
 
   head "https://github.com/SpyicyDev/macblock.git", branch: "main"
 
