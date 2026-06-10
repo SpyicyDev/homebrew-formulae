@@ -43,3 +43,4 @@ Menu-bar app that shows who is keeping your Mac awake.
 
 The app is ad-hoc signed (not notarized): right-click → Open on first
 launch, or `xattr -dr com.apple.quarantine /Applications/Awake.app`.
+
